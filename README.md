@@ -114,18 +114,6 @@ Static files in the `dist/` directory can be hosted on Vercel, Netlify, or GitHu
 
 ---
 
-## Machinery Specifications
-
-| Model | Classification | Target Environment | Key Specifications |
-| :--- | :--- | :--- | :--- |
-| **EMX-915** | Single-Head 15-Needle | Boutique, sampling, and small-batch production | Up to 1,000 SPM, 15-needle configuration, tubular & flat frame support |
-| **EMX-624** | 6-Head 24-Needle | Balanced throughput for contract embroidery units | 6 heads, 24 needles, high-stability production-grade frame |
-| **EMX-1208** | 12-Head 8-Needle | High-volume setups and export-driven textile factories | 12-head line architecture, high-speed stitch control, repeat-optimized |
-| **EMX-CAP** | Cap & Tubular Frame | Curved-surface applications and structured caps | Cap driver compatibility, tubular frame precision, quick fixture transitions |
-| **EMX-SEQ** | Sequin & Cording | Value-added embellishment and decorative stitching | Sequin feed attachment, cording support, programmable decorative sequences |
-
----
-
 *Copyright &copy; 2026 Embronix. All rights reserved.*
 
 ---
