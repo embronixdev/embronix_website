@@ -20,7 +20,7 @@ export default function Footer() {
           <p>
             This website is made and maintained by{' '}
             <a href="https://nyomik.in" target="_blank" rel="noopener noreferrer" className="nyomic-link">
-              Nyomic Tech and Creative Studio
+              Nyomik Tech and Creative Studio
             </a>
             .
           </p>
