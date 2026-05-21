@@ -159,3 +159,7 @@ The website showcases five core commercial product lines manufactured by Embroni
 ---
 
 *Copyright &copy; 2008-2026 Embronix Pvt Ltd. All rights reserved.*
+
+---
+
+*Developed and maintained by [nyomik.in](https://nyomik.in).*
