@@ -12,7 +12,7 @@ function TermsPage() {
       <main id="main-content" className="legal-layout">
         <section className="legal-card" aria-labelledby="terms-title">
           <h1 id="terms-title" className="legal-title">Terms & Conditions</h1>
-          <p className="muted">These terms apply to use of the Embronix Pvt Ltd website.</p>
+          <p className="muted">These terms apply to use of the Embronix website.</p>
 
           <section>
             <h2>Website Purpose</h2>
@@ -26,7 +26,7 @@ function TermsPage() {
 
           <section>
             <h2>Accuracy of Descriptions</h2>
-            <p className="muted">Embronix Pvt Ltd is not liable for any unintentional inaccuracies in product descriptions on this website.</p>
+            <p className="muted">Embronix is not liable for any unintentional inaccuracies in product descriptions on this website.</p>
           </section>
 
           <section>
@@ -36,7 +36,7 @@ function TermsPage() {
 
           <section>
             <h2>Intellectual Property</h2>
-            <p className="muted">All content, text, design elements, and branding on this website belong to Embronix Pvt Ltd.</p>
+            <p className="muted">All content, text, design elements, and branding on this website belong to Embronix.</p>
           </section>
 
           <section>

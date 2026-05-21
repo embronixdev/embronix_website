@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import TopBar from './components/embronix/TopBar';
 import Hero from './components/embronix/Hero';
 import About from './components/embronix/About';
@@ -9,6 +9,8 @@ import Footer from './components/embronix/Footer';
 import { about, contacts, hero, products, trustSignals, utility, whyUs } from './components/embronix/data';
 
 function App() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reducedMotion) {
@@ -32,6 +34,13 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
+
   return (
     <>
       <a href="#main-content" className="skip-link">Skip to main content</a>
@@ -39,7 +48,7 @@ function App() {
       <header className="site-nav" aria-label="Primary">
         <div className="container-shell site-nav-inner">
           <a className="brand-mark" href="#hero">EMBRONIX</a>
-          <nav aria-label="Main navigation">
+          <nav className="desktop-nav" aria-label="Main navigation">
             <ul className="nav-list">
               <li><a href="#about">About</a></li>
               <li><a href="#products">Products</a></li>
@@ -47,7 +56,37 @@ function App() {
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
-          <a className="btn-primary" href="#contact">Request Quote</a>
+          <div className="nav-actions">
+            <a className="btn-primary nav-cta" href="#contact">Request Quote</a>
+            <button
+              type="button"
+              className="mobile-menu-toggle"
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-nav-panel"
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+              onClick={() => setMobileMenuOpen((open) => !open)}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
+        </div>
+        <div
+          id="mobile-nav-panel"
+          className={`mobile-nav-panel${mobileMenuOpen ? ' is-open' : ''}`}
+        >
+          <nav className="container-shell" aria-label="Mobile navigation">
+            <ul className="mobile-nav-list">
+              <li><a href="#about" onClick={() => setMobileMenuOpen(false)}>About</a></li>
+              <li><a href="#products" onClick={() => setMobileMenuOpen(false)}>Products</a></li>
+              <li><a href="#why" onClick={() => setMobileMenuOpen(false)}>Why Us</a></li>
+              <li><a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
+            </ul>
+            <a className="btn-primary mobile-nav-cta" href="#contact" onClick={() => setMobileMenuOpen(false)}>
+              Request Quote
+            </a>
+          </nav>
         </div>
       </header>
 

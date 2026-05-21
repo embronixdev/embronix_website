@@ -12,11 +12,11 @@ function PrivacyPage() {
       <main id="main-content" className="legal-layout">
         <section className="legal-card" aria-labelledby="privacy-title">
           <h1 id="privacy-title" className="legal-title">Privacy Policy</h1>
-          <p className="muted">This page explains how Embronix Pvt Ltd handles data submitted through this website.</p>
+          <p className="muted">This page explains how Embronix handles data submitted through this website.</p>
 
           <section>
             <h2>Data We Collect</h2>
-            <p className="muted">We collect only the details you provide in the contact form: name, company name, phone number, and email address.</p>
+            <p className="muted">We collect only the details you choose to share through this website, including your name and enquiry details submitted through the product enquiry flow or direct contact links.</p>
           </section>
 
           <section>
@@ -26,7 +26,7 @@ function PrivacyPage() {
 
           <section>
             <h2>How We Use Your Data</h2>
-            <p className="muted">Your inquiry data is not sold, not shared with external parties, and not used for marketing campaigns.</p>
+            <p className="muted">Your inquiry data is not sold, not shared for marketing, and is used only to respond to your request. If you choose the WhatsApp enquiry option, your prepared message is opened in WhatsApp and is then handled under WhatsApp&apos;s own terms and privacy practices.</p>
           </section>
 
           <section>

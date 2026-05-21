@@ -5,7 +5,7 @@ export function SiteHeader({ ctaLabel = 'Request a Quote' }) {
     <header className="site-header" aria-label="Primary">
       <div className="container-shell site-nav-row">
         <div>
-          <p className="brand-title">Embronix Pvt Ltd</p>
+          <p className="brand-title">Embronix</p>
           <p className="brand-sub">Industrial Embroidery Machinery</p>
         </div>
 
@@ -31,7 +31,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="container-shell footer-row">
-        <p>Embronix Pvt Ltd</p>
+        <p>Embronix</p>
         <p>
           © {year} All rights reserved.{' '}
           <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms & Conditions</a>
