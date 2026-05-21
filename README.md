@@ -6,7 +6,7 @@ Designed with high-fidelity aesthetics, rigorous performance optimization, and a
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 The project leverages a highly modern, efficient, and robust frontend stack:
 
@@ -18,27 +18,27 @@ The project leverages a highly modern, efficient, and robust frontend stack:
 
 ---
 
-## ✨ Features & Architecture
+## Features & Architecture
 
-### 💎 Premium Design & Aesthetics
+### Premium Design & Aesthetics
 - **Cohesive Dark Color System**: Tailored around rich navy blue primary backgrounds (`#0b1a2f`), charcoal secondary containers (`#11161d`), premium gold accents (`#b08d57`), and high-contrast paper elements (`#f5f2ec`).
 - **Typography & Scale**: Styled with clamped responsive text dimensions (`clamp()`) to ensure headlines adapt fluidly from mobile displays to ultra-wide desktop monitors without text wrapping artifacts.
 - **Micro-Animations & Scroll Interaction**: Built-in `IntersectionObserver`-based scroll reveal effects (`[data-reveal]`) that bring page components to life dynamically. Honors the `prefers-reduced-motion` media query for inclusive accessibility.
 
-### ⚡ Multi-Page Build Pipeline
+### Multi-Page Build Pipeline
 Configured for multi-entry static building using Rollup options within Vite. This allows compiling three distinct pages from a unified development state:
 1. **Homepage** (`index.html` → `/`)
 2. **Privacy Policy** (`privacy.html` → `/privacy`)
 3. **Terms of Service** (`terms.html` → `/terms`)
 
-### ♿ Accessibility & Performance First
+### Accessibility & Performance First
 - **Semantic HTML**: Fully structured around HTML5 landmark elements (`<header>`, `<main>`, `<section>`, `<nav>`, `<footer>`).
 - **Keyboard Navigation**: Active skip-to-content links (`.skip-link`) for immediate screen reader/keyboard navigation bypass.
 - **Optimized Assets**: Vectors and optimized SVGs are pre-loaded to achieve near-perfect Core Web Vitals (including excellent Largest Contentful Paint (LCP) performance).
 
 ---
 
-## 📦 Directory Structure
+## Directory Structure
 
 ```text
 ├── dist/                   # Production build outputs (compiled static files)
@@ -71,7 +71,7 @@ Configured for multi-entry static building using Rollup options within Vite. Thi
 
 ---
 
-## ⚙️ Development & Build Guide
+## Development & Build Guide
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ npm run preview
 
 ---
 
-## 🏗️ Deployment
+## Deployment
 
 Since the compilation compiles down to pure static assets (HTML, CSS, JS, SVGs), the application can be hosted instantly on any modern CDN or static hosting platform:
 
@@ -133,7 +133,7 @@ You can drag-and-drop the generated `dist/` directory directly onto platforms li
 
 ---
 
-## 🏭 Machinery Portfolio & Specs
+## Machinery Portfolio & Specs
 
 The website showcases five core commercial product lines manufactured by Embronix:
 
@@ -147,7 +147,7 @@ The website showcases five core commercial product lines manufactured by Embroni
 
 ---
 
-## 💼 Institutional Reference Data
+## Institutional Reference Data
 
 - **Headquarters**: F-8, Silicon Shoppers, Udhana, Surat, Gujarat, India
 - **GSTIN**: `24AAMFE8719N1ZT`
