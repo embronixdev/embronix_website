@@ -94,23 +94,52 @@ npm run preview
 
 ---
 
-## Deployment
+## Deployment & Hosting
 
-### Firebase Hosting Setup
+The website is hosted on the **Vercel Free Tier** with a custom domain managed via **Hostinger**.
 
-To deploy via Firebase, initialize standard hosting:
-```bash
-npx -y firebase-tools@latest init hosting
-```
-* Configure the public directory as `dist`.
-* Build and deploy:
-```bash
-npm run build
-npx -y firebase-tools@latest deploy --only hosting
-```
+### Vercel Deployment
 
-### Alternative Deployments
-Static files in the `dist/` directory can be hosted on Vercel, Netlify, or GitHub Pages.
+1. **GitHub Integration (Recommended)**:
+   * Push the repository to GitHub.
+   * Go to the [Vercel Dashboard](https://vercel.com/dashboard) and click **Add New** > **Project**.
+   * Import this repository.
+   * In **Build & Development Settings**, configure:
+     * **Framework Preset**: `Vite` (Vercel automatically detects this)
+     * **Build Command**: `npm run build`
+     * **Output Directory**: `dist`
+   * Click **Deploy**. Vercel will automatically build and deploy every push to the `main` branch.
+
+2. **Local Vercel CLI Deployment (Alternative)**:
+   ```bash
+   npm i -g vercel
+   vercel
+   ```
+   Follow the CLI prompts to link and deploy the project.
+
+### Custom Domain Configuration (Hostinger)
+
+To configure the custom domain purchased from Hostinger:
+
+1. **Add Domain to Vercel**:
+   * In your Vercel project, go to **Settings** > **Domains**.
+   * Enter your custom domain and click **Add**.
+
+2. **Configure DNS Records in Hostinger**:
+   * Log into your **Hostinger Control Panel (hPanel)**.
+   * Navigate to **Domains** > Select your domain > **DNS / Nameservers**.
+   * Add/update the following records as requested by Vercel:
+     * **A Record** (for root domain):
+       * **Type**: `A`
+       * **Name/Host**: `@`
+       * **Points to**: `76.76.21.21`
+       * **TTL**: `3600` (or default)
+     * **CNAME Record** (for `www` subdomain):
+       * **Type**: `CNAME`
+       * **Name/Host**: `www`
+       * **Points to**: `cname.vercel-dns.com`
+       * **TTL**: `3600` (or default)
+   * Vercel will automatically provision a free Let's Encrypt SSL certificate once DNS propagation is complete (usually takes from a few minutes up to 24 hours).
 
 ---
 
